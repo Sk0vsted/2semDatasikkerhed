@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSecurity1</title>
+</head>
+
+<body>
+    <h1>Data Security 1</h1>
+    <p>Dette er en side som viser Caesar Cipher og Vigenère Cipher</p>
+
+    <div id="caesar">
+        <h2>Caesar Cipher</h2>
+        <label for="caesarInput">Input:</label>
+        <input type="text" id="caesarInput" placeholder="Input">
+        <label for="caesarShift">Shift:</label>
+        <input type="number" id="caesarShift" placeholder="Shift">
+        <div style="display: flex;">
+            <button id="caesarEncrypt" class="encrypt">Encrypt</button>
+            <button id="caesarDecrypt" class="decrypt">Decrypt</button>
+        </div>
+        <p id="caesarOutput"></p>
+    </div>
+
+    <div id="vigenere">
+        <h2>Vigenère Cipher</h2>
+        <label for="vigenereInput">Input:</label>
+        <input type="text" id="vigenereInput" placeholder="Input">
+        <label for="vigenereKey">Key:</label>
+        <input type="text" id="vigenereKey" placeholder="Key">
+        <div style="display: flex;">
+            <button id="vigenereEncrypt" class="encrypt">Encrypt</button>
+            <button id="vigenereDecrypt" class="decrypt">Decrypt</button>
+        </div>
+        <p id="vigenereOutput"></p>
+    </div>
+    <script src="./Excercise DS.1.0/caesar.js"></script>
+    <script src="./Excercise DS.1.1/vigenere.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0deff;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #caesar,
+        #vigenere {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            width: 20%;
+            height: 20px;
+            padding: 10px 5px;
+        }
+
+        .encrypt {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .encrypt:hover {
+            background-color: #45a049;
+        }
+
+        .decrypt {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .decrypt:hover {
+            background-color: #f44336;
+        }
+    </style>
+</body>
+
+</html>
