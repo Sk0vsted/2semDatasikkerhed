@@ -1,0 +1,13 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Clearsign testing.
+
+Y.W.T.C.O - I.W.S.T.Y.W.D.T.S.N.J.T - B.B.T.T.F - N.L.I.I.D
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQRViGVsWjG4uqNp9sgRmDr5xwv5+gUCZ5yyxwAKCRARmDr5xwv5
++r8rAQDB5cfJHLRDaflnuUo+mjEECa6Tfnon4PN7r2hqVSpktwD/Xxqb3MqQYiMC
+pnuRWVEYq6oa4J+xRBJavratFBsoHQ0=
+=Zgq4
+-----END PGP SIGNATURE-----
