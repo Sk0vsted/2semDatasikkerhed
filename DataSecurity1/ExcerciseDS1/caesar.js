@@ -8,16 +8,22 @@ function caesarE(key, clearText) {
     let cipherText = '';
     clearText = clearText.toLowerCase();
     key = parseInt(key);
+
     for (let i = 0; i < clearText.length; i++) {
         const char = clearText[i];
         const index = alphabetArray.indexOf(char);
+
         if (index === -1) {
             cipherText += char;
         } else {
-            const newIndex = (index + key) % alphabetLength;
+            let newIndex = (index + key) % alphabetLength;
+            if (newIndex < 0) {
+                newIndex += alphabetLength;
+            }
             cipherText += alphabetArray[newIndex];
         }
     }
+
     return cipherText;
 }
 
@@ -37,15 +43,23 @@ function caesarD(key, cipherText) {
     let clearText = '';
     cipherText = cipherText.toLowerCase();
     key = parseInt(key);
+
     for (let i = 0; i < cipherText.length; i++) {
         const char = cipherText[i];
         const index = alphabetArray.indexOf(char);
+
         if (index === -1) {
+            // Hvis tegnet ikke er i alfabetet, tilføj det uændret
             clearText += char;
         } else {
-            const newIndex = (index - key + alphabetLength) % alphabetLength;
+            // Beregn det nye indeks med korrekt wraparound for negative værdier
+            let newIndex = (index - key) % alphabetLength;
+            if (newIndex < 0) {
+                newIndex += alphabetLength; // Sørg for, at indekset er positivt
+            }
             clearText += alphabetArray[newIndex];
         }
     }
+
     return clearText;
 }
