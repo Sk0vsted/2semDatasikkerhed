@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "readline-sync": "^1.4.10",
+    "sha256": "^0.2.0",
+    "sqlite3": "^5.1.7"
+  }
+}
