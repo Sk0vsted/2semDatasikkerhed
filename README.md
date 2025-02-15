@@ -1,6 +1,5 @@
 # 2semDatasikkerhed
 
-
 Exercise DS.4.0
 Test your solution to exercise In Exercise DS.3.0 You built a registration program. Now you must build a login mechanism using the user table from the database.
 
